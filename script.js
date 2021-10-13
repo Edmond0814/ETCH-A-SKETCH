@@ -27,10 +27,10 @@ for (let i=0;i<16**2;i++){
 
 container.addEventListener('mouseover',function(e){
     if(e.target.className=='box sketch'){
-        let opacity = window.getComputedStyle(e.target).opacity + 0.1
-        console.log(window.getComputedStyle(e.target).opacity);
+        let opacity = Number(window.getComputedStyle(e.target).opacity) + 0.1;
         e.target.setAttribute('style',`opacity:${opacity}`)
     }
+    else console.log("bazinga");
 })
 
 const reset = document.querySelector('.button')
