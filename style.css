@@ -3,11 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: cadetblue;
 }
 
 .container{
+    background-color: #fff;
+    border: 2px solid black;
     display: grid;
-    grid-template-columns: repeat(3,3rem);
 }
 
 .box{
@@ -16,6 +18,7 @@
 
 .sketch{
     background-color: black;
+    opacity: 0%;
 }
 
 .button{
